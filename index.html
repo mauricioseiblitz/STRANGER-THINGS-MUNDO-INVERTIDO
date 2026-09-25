@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stranger Things - mundo invertido</title>
+</head>
+<body>
+    <header>
+        <audio id="music" autoplay>
+        <source src="assets/musics/normal-world.mpeg" aria-details="Audio do site" />
+        </audio>
+
+        <img class="invert-element" src="assets/images/banner/logo.svg" alt="Imagem principal Mundo Invertido. Semana Frontend DIO." />
+        <p class="invert-element" role="text">
+          Uma jornada para quem não tem medo do desconhecido. O caminho para o
+          Mundo invertido é incerto, repleto de obstáculos e perigos. Porém, a
+          recompensa é grande: salvar Hawkings e o mundo todo das garras de
+          Vecna. Você está preparado? Então clique no botão abaixo para entrar
+          no Mundo Invertido!
+        </p>
+        <button id="switch-theme-button" onclick="switchTheme()">Inverter Mundos</button>
+    </header>
+
+    <main>
+        <section>
+            <h1>O MUNDO INVERTIDO</h1>
+            <p role="text">
+                O Mundo Invertido parece uma cópia do nosso mundo, mas com criaturas horrendas, 
+                tempestades assustadoras, muita escuridão e entidades malignas. Um reino controlado 
+                por Vecna, que tem planos de trazer tudo isso ao nosso mundo. 
+            </p>
+        </section>
+
+        <section>
+            <iframe 
+                width="400" 
+                height="250" 
+                src="https://www.youtube.com/embed/xMs6TnrItC4"
+                title="Como se tornar especialista em Machine Learning" 
+                frameborder="0" 
+                allow="accelerometer; 
+                autoplay; 
+                clipboard-write; 
+                encrypted-media; 
+                gyroscope; 
+                picture-in-picture; 
+                web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <h2>STRANGER THINGS VOL. 4</h2>
+            <p role="text">
+                Mais experientes, os heróis de Stranger Things também precisam
+                enfrentar desafios maiores do que nunca e fazer decisões que vão
+                mudar suas vidas para sempre. Confira ao lado o trailer da quarta
+                temporada.
+            </p>
+        </section>
+
+        <section>
+            <h2>A SEGUNDA SÉRIE MAIS ASSISTIDA DA NETFLIX</h2>
+            <ul>
+                <li><img src="assets/images/content/serie-image-01.png" alt="Imagem de Vecna" /></li>
+                <li><img src="assets/images/content/serie-image-02.png" alt="Imagem ilustrativa dos amigos de Eleven" /></li>
+                <li><img src="assets/images/content/serie-image-03.png" alt="Imagem Eleven assustada" /></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>O CLUBE DUNGEONS & DRAGONS</h2>
+            <p role="text">
+                Para deter Vecna, os heróis de Stranger Things também precisam de
+                você. O Clube de D&D mais famoso de Hawkings está com vagas abertas
+                para sua próxima aventura. Se você é destemido, gosta de desafios e
+                não tem medo de rodar o D20, chegou a hora de se inscrever para fazer
+                parte da nova campanha.
+            </p>
+
+            <h3>Entre para o clube de D&D e tenha experiências de <span>outro mundo<span></span></h3>
+
+            <form>
+                <label for="name">Nome Completo</label>
+                <input type="text" name="name" id="txtName">
+          
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="txtEmail">
+          
+                <label for="level">Level</label>
+                <input type="text" name="level" id="txtLevel">
+
+                <label for="character">Personagem</label>
+                <textarea name="character" cols="30" rows="10" id="txtCharacter"></textarea>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Projeto construído para fins didáticos, com o objetivo de colocar em
+            prática os conhecimentos de HTML, CSS e JavaScript aprendidos na DIO._
+        </p>
+        <img src="assets/images/footer/logo.svg" alt="">
+    </footer>
+</body>
+</html>

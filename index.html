@@ -9,20 +9,22 @@
     <link rel="stylesheet" href="/assets/styles/reset.css">
 </head>
 <body class="light-theme">
-    <header class="header-content">
+    <header>
         <audio id="music" autoplay>
-        <source src="assets/musics/normal-world.mpeg" aria-details="Audio do site" />
+        <!-- <source src="assets/musics/normal-world.mpeg" aria-details="Audio do site" /> -->
         </audio>
 
-        <img class="invert-element" src="assets/images/banner/logo.svg" alt="Imagem principal Mundo Invertido. Semana Frontend DIO." />
-        <p class="invert-element" role="text">
-          Uma jornada para quem não tem medo do desconhecido. O caminho para o
-          Mundo invertido é incerto, repleto de obstáculos e perigos. Porém, a
-          recompensa é grande: salvar Hawkings e o mundo todo das garras de
-          Vecna. Você está preparado? Então clique no botão abaixo para entrar
-          no Mundo Invertido!
-        </p>
-        <button id="switch-theme-button" onclick="switchTheme()">Inverter Mundos</button>
+        <div class="header-content">
+            <img class="invert-element" src="assets/images/banner/logo.svg" alt="Imagem principal Mundo Invertido. Semana Frontend DIO." />
+            <p class="invert-element" role="text">
+                Uma jornada para quem não tem medo do desconhecido. O caminho para o
+                Mundo invertido é incerto, repleto de obstáculos e perigos. Porém, a
+                recompensa é grande: salvar Hawkings e o mundo todo das garras de
+                Vecna. Você está preparado? Então clique no botão abaixo para entrar
+                no Mundo Invertido!
+            </p>
+            <button id="switch-theme-button" onclick="switchTheme()">Inverter Mundos</button>
+        </div>
     </header>
 
     <main>

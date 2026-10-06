@@ -1,5 +1,5 @@
 /* VARIABLES & THEMES */
- 
+
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
@@ -11,12 +11,10 @@
 }
 
 .light-theme {
-  --page-background: linear-gradient(
-    180deg,
-    #ffffff 0%,
-    #ffffff 65%,
-    rgba(255, 255, 255, 0.75) 100%
-  );
+  --page-background: linear-gradient(180deg,
+      #ffffff 0%,
+      #ffffff 65%,
+      rgba(255, 255, 255, 0.75) 100%);
   --header-background-color: #e3e3e3;
   --highlight-color: #000000;
   --featured-font-family: "Archivo", sans-serif;
@@ -29,12 +27,10 @@
 }
 
 .dark-theme {
-  --page-background: linear-gradient(
-    180deg,
-    #050000 0%,
-    #130404 65%,
-    rgba(19, 1, 1, 0.75) 100%
-  );
+  --page-background: linear-gradient(180deg,
+      #050000 0%,
+      #130404 65%,
+      rgba(19, 1, 1, 0.75) 100%);
   --header-background-color: #220f0f;
   --highlight-color: #ffffff;
   --featured-font-family: "Rubik Glitch", sans-serif;
@@ -47,11 +43,13 @@
 }
 
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--featured-font-family);
   font-size: 3rem;
   color: var(--primary-color);
@@ -63,7 +61,10 @@ p {
   color: var(--highlight-color);
 }
 
-p, input, label, textarea {
+p,
+input,
+label,
+textarea {
   font-family: 'Libre Baskerville', serif;
 }
 
@@ -164,7 +165,7 @@ main {
 /** SECTION STYLES **/
 section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   margin-bottom: 95px;
 }
 
@@ -178,7 +179,7 @@ section {
 }
 
 #section-inverted-world .section-texts {
-  width: 60%;
+  width: 50%;
 }
 
 
@@ -202,17 +203,48 @@ section {
   background-color: var(--primary-color);
 }
 
-#section-stranger-things-trailer .video-frame iframe{
+#section-stranger-things-trailer .video-frame iframe {
   position: relative;
   bottom: 24px;
   left: 24px;
   border: 2px solid;
-  border-image: linear-gradient(
-    var(--primary-color),
-    var(--primary-color-contrast)
-  );
+  border-image: linear-gradient(var(--primary-color),
+      var(--primary-color-contrast));
   border-image-slice: 10;
 }
 
+/* Section 03 - Stranger Things Gallery */
+#section-stranger-things-gallery {
+  width: 100%;
+  justify-content: center;
+  background: var(--background-lamp-image) 125% / 50% no-repeat;
+}
 
+#section-stranger-things-gallery .container {
+  width: 100%;
+}
 
+#section-stranger-things-gallery .container h2 {
+  width: 800px;
+}
+
+#section-stranger-things-gallery .gallery-container {
+  display: flex;
+  gap: 50px;
+  padding-left: 20px;
+}
+
+#section-stranger-things-gallery .gallery-image {
+  width: 250px;
+  height: 250px;
+  outline: 20px solid var(--highlight-color);
+  border: 3px solid var(--primary-color);
+  box-sizing: initial;
+}
+
+#section-stranger-things-gallery .gallery-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 10px solid var(--highlight-color);
+}

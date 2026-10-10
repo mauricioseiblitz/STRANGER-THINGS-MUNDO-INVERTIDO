@@ -8,6 +8,6 @@ document.getElementById('switch-theme-button').addEventListener('click', () => {
     if (document.body.classList[0] == 'light-theme') {
         document.getElementById('music').src = 'assets/musics/normal-world.mpeg';
     } else {
-        document.getElementById('music').src = 'assets/musics/inverted-world.mpeg';
+        document.getElementById('music').src = 'assets/musics/dragonballgtgeradonaIa.mp3';
     }
 });

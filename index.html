@@ -12,10 +12,6 @@
 
 <body class="light-theme">
     <header>
-        <audio id="music" autoplay>
-            <!-- <source src="assets/musics/normal-world.mpeg" aria-details="Audio do site" /> -->
-        </audio>
-
         <div class="header-content">
             <img class="invert-element" src="assets/images/banner/logo.svg"
                 alt="Imagem principal Mundo Invertido. Semana Frontend DIO." />
@@ -123,6 +119,15 @@
         </p>
         <img src="assets/images/footer/logo.svg" alt="">
     </footer>
+
+    <audio id="music" src="assets/musics/normal-world.mpeg" autoplay></audio>
+
+    <script>
+        function switchTheme() {
+            document.body.classList.toggle('dark-theme');
+            document.body.classList.toggle('light-theme');
+        }
+    </script>
 </body>
 
 </html>
